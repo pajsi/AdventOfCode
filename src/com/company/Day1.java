@@ -1,6 +1,6 @@
 // Advent od Code 2021
 // Day 1: Sonar Sweep
-//https://adventofcode.com/2021/day/1#
+//https://adventofcode.com/2021/day/1
 
 package com.company;
 
@@ -14,10 +14,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+
 public class Day1
 {
     public static void calculate()
     {
+        String currentDir = System.getProperty("user.dir");
         int numberOfLines = 0;
         int sizeOfArray = 2000;
 
@@ -28,7 +30,7 @@ public class Day1
 
         // File path is passed as parameter
         // Note:  Double back quote is to avoid compiler interpret words like \test as \t (ie as an escape sequence)
-        File file = new File("C:\\Users\\Pajs\\IdeaProjects\\AdventOfCode\\src\\com\\company\\input_Day1.txt");
+        File file = new File(currentDir + "\\src\\com\\company\\input_Day1.txt");
 
         try
         {
