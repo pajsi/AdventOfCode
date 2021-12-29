@@ -21,7 +21,7 @@ public class Day1
     {
         String currentDir = System.getProperty("user.dir");
         int numberOfLines = 0;
-        int sizeOfArray = 2000;
+        int sizeOfArray = 1000;
 
         // declares an array of integers
         int[] InputLinesInArray;
@@ -30,7 +30,7 @@ public class Day1
 
         // File path is passed as parameter
         // Note:  Double back quote is to avoid compiler interpret words like \test as \t (ie as an escape sequence)
-        File file = new File(currentDir + "\\src\\com\\company\\input_Day1.txt");
+        File file = new File (currentDir + "\\src\\com\\company\\input_Day1.txt");
 
         try
         {
@@ -43,6 +43,15 @@ public class Day1
             // Condition holds true till there is character in a string
             while ((st = br.readLine()) != null)
             {
+                //exception handling (throw new) to prevent from array overloading
+                if (numberOfLines + 1 > sizeOfArray) 
+                {
+                    //when exception occurs also opened buffer has to be closed
+                    br.close();
+                    
+                    throw new IllegalArgumentException("array InputLinesInArray overloaded, check if numberOfLines > sizeOfArray");
+                }
+                
                 // convert string from read file line into int with error handling
                 try
                 {
