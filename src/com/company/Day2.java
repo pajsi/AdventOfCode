@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class Day2
 {
-    public static void calculate()
+    public void calculate()
     {
         String currentDir = System.getProperty("user.dir");
         int numberOfLines = 0;
