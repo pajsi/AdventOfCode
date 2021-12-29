@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class Day1
 {
-    public static void calculate()
+    public void calculate()
     {
         String currentDir = System.getProperty("user.dir");
         int numberOfLines = 0;
@@ -48,7 +48,7 @@ public class Day1
                 {
                     //when exception occurs also opened buffer has to be closed
                     br.close();
-                    
+
                     throw new IllegalArgumentException("array InputLinesInArray overloaded, check if numberOfLines > sizeOfArray");
                 }
                 
