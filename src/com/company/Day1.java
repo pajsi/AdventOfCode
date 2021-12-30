@@ -21,7 +21,7 @@ public class Day1
     {
         String currentDir = System.getProperty("user.dir");
         int numberOfLines = 0;
-        int sizeOfArray = 1000;
+        int sizeOfArray = 2000;
 
         // declares an array of integers
         int[] InputLinesInArray;

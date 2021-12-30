@@ -3,6 +3,8 @@
 
 package com.company;
 
+import javax.swing.RowFilter.ComparisonType;
+
 public class Main
 {
     public static void main(String[] args)
