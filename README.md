@@ -2,5 +2,6 @@
 https://adventofcode.com/2021/
 
 Day1: one star
-Day2:
-Day3: 
+Day2: one star
+Day3: onse star
+Day4: 

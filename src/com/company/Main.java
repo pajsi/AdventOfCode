@@ -3,8 +3,6 @@
 
 package com.company;
 
-import javax.swing.RowFilter.ComparisonType;
-
 public class Main
 {
     public static void main(String[] args)
@@ -12,8 +10,11 @@ public class Main
         //Day1 day1 = new Day1();
         //day1.calculate();
 
-        Day2 day2 = new Day2();
-        day2.calculate();
+        //Day2 day2 = new Day2();
+        //day2.calculate();
+
+        Day3 day3 = new Day3();
+        day3.calculate();
 
     }
 }
