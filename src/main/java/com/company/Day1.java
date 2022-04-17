@@ -30,7 +30,7 @@ public class Day1
 
         // File path is passed as parameter
         // Note:  Double back quote is to avoid compiler interpret words like \test as \t (ie as an escape sequence)
-        File file = new File (currentDir + "\\src\\com\\company\\input_Day1.txt");
+        File file = new File (currentDir + "/src/main/java/com/company/input_Day1.txt");
 
         try
         {

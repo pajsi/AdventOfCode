@@ -28,7 +28,7 @@ public class Day4
     public void calculate()
     {
         String currentDir = System.getProperty("user.dir");
-        File fileInputData = new File(currentDir + "\\src\\com\\company\\input_Day4.txt");
+        File fileInputData = new File(currentDir + "/src/main/java/com/company/input_Day4.txt");
 
         List<Integer> listOfDrawnNumbers = new ArrayList<Integer>();
 

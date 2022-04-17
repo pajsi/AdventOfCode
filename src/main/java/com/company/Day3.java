@@ -51,7 +51,7 @@ public class Day3
 
         // File path is passed as parameter
         // Note:  Double back quote is to avoid compiler interpret words like \test as \t (ie as an escape sequence)
-        File file = new File(currentDir + "\\src\\com\\company\\input_Day3.txt");
+        File file = new File(currentDir + "/src/main/java/com/company/input_Day3.txt");
 
         try
         {
@@ -77,7 +77,7 @@ public class Day3
             while ((st = br.readLine()) != null)
             {                
                     // chceck if readed line is a number, if not dont add string line to array and continue
-                    if(isNumeric(st) == true)
+                    if(isNumeric(st))
                     {
                         for(int j = 0; j < 12; j++)
                         {
@@ -85,8 +85,8 @@ public class Day3
                             twoD_arr[currFirstDim][j] = convertToBoolean(st.substring(j, j + 1));
 
                             // print the values to check if we read correct
-                            if(twoD_arr[currFirstDim][j] == true) {System.out.print("1"); mostCommonValue[j]++;}
-                            if(twoD_arr[currFirstDim][j] == false) {System.out.print("0"); mostCommonValue[j]--;}
+                            if(twoD_arr[currFirstDim][j]) {System.out.print("1"); mostCommonValue[j]++;}
+                            if(!twoD_arr[currFirstDim][j]) {System.out.print("0"); mostCommonValue[j]--;}
                         }
                     }
 
